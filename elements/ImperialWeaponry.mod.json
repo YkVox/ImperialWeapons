@@ -1,0 +1,11 @@
+{
+  "_fv": 8,
+  "_type": "tab",
+  "definition": {
+    "name": "Imperial Weaponry",
+    "icon": {
+      "value": "CUSTOM:LothricKnightSword"
+    },
+    "showSearch": false
+  }
+}
