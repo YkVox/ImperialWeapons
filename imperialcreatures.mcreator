@@ -18,12 +18,22 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "imperial_weaponry"
+    },
+    {
+      "name": "Claymore",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "claymore"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.imperialcreatures.claymore": "Claymore",
       "item.imperialcreatures.lothric_knight_sword": "Lothric Knight Sword",
       "itemGroup.tabimperial_weaponry": "Imperial Weaponry"
     }
