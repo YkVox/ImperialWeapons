@@ -1,8 +1,9 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "imperialweapons:items/claymore"
-    	},
+	"parent": "item/handheld",
+	"gui_light": "side@",
+	"textures": {
+		"layer0": "item/claymore"
+	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 90, 40],
@@ -43,5 +44,7 @@
 			"translation": [1, -1, 0],
 			"scale": [2, 2, 1]
 		}
-  }
+
+
+	}
 }

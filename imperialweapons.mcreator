@@ -24,7 +24,7 @@
       "type": "tool",
       "sortid": 3,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "claymore"
     }
@@ -33,6 +33,13 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.imperialcreatures.claymore": "Claymore",
+      "item.imperialcreatures.lothric_knight_sword": "Lothric Knight Sword",
+      "itemGroup.tabimperial_weaponry": "Imperial Weaponry",
+      "item.imperialweapons.claymore": "Claymore",
+      "item.imperialweapons.lothric_knight_sword": "Lothric Knight Sword"
+    },
+    "fr_fr": {
       "item.imperialcreatures.claymore": "Claymore",
       "item.imperialcreatures.lothric_knight_sword": "Lothric Knight Sword",
       "itemGroup.tabimperial_weaponry": "Imperial Weaponry",

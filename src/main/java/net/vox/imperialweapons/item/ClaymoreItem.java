@@ -6,10 +6,17 @@ import net.vox.imperialweapons.ImperialweaponsModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.client.util.ITooltipFlag;
+
+import java.util.List;
 
 @ImperialweaponsModElements.ModElement.Tag
 public class ClaymoreItem extends ImperialweaponsModElements.ModElement {
@@ -46,6 +53,11 @@ public class ClaymoreItem extends ImperialweaponsModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -3f, new Item.Properties().group(ImperialWeaponryItemGroup.tab)) {
+			@Override
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("Large two-handed sword"));
+			}
 		}.setRegistryName("claymore"));
 	}
 }

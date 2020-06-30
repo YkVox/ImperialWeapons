@@ -6,7 +6,9 @@
     "texture": "claymore",
     "customModelName": "Normal",
     "name": "Claymore",
-    "specialInfo": [],
+    "specialInfo": [
+      "Large two-handed sword"
+    ],
     "creativeTab": {
       "value": "CUSTOM:ImperialWeaponry"
     },
