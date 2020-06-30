@@ -1,8 +1,8 @@
 
-package net.vox.imperialcreatures.item;
+package net.vox.imperialweapons.item;
 
-import net.vox.imperialcreatures.itemgroup.ImperialWeaponryItemGroup;
-import net.vox.imperialcreatures.ImperialcreaturesModElements;
+import net.vox.imperialweapons.itemgroup.ImperialWeaponryItemGroup;
+import net.vox.imperialweapons.ImperialweaponsModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -11,11 +11,11 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-@ImperialcreaturesModElements.ModElement.Tag
-public class LothricKnightSwordItem extends ImperialcreaturesModElements.ModElement {
-	@ObjectHolder("imperialcreatures:lothric_knight_sword")
+@ImperialweaponsModElements.ModElement.Tag
+public class LothricKnightSwordItem extends ImperialweaponsModElements.ModElement {
+	@ObjectHolder("imperialweapons:lothric_knight_sword")
 	public static final Item block = null;
-	public LothricKnightSwordItem(ImperialcreaturesModElements instance) {
+	public LothricKnightSwordItem(ImperialweaponsModElements instance) {
 		super(instance, 1);
 	}
 

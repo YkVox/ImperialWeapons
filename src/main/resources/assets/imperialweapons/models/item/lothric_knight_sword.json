@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "imperialweapons:items/lothric_straight_sword"
+  }
+}

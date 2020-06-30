@@ -2,14 +2,14 @@ modLoader="javafml"
 loaderVersion="[31,)"
 
 [[mods]]
-modId="imperialcreatures"
-version="1.0.0"
-displayName="Imperial Creatures"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+modId="imperialweapons"
+version="0.0.1"
+displayName="Imperial Weapons"
+credits="Created using mod maker MCreator"
 displayURL="https://mcreator.net"
-authors="alex, MCreator"
+authors="Vox"
 
-[[dependencies.imperialcreatures]]
+[[dependencies.imperialweapons]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"

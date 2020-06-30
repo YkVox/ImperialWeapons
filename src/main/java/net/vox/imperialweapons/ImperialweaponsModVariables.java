@@ -1,4 +1,4 @@
-package net.vox.imperialcreatures;
+package net.vox.imperialweapons;
 
 import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.NetworkEvent;
@@ -14,9 +14,9 @@ import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
 
-public class ImperialcreaturesModVariables {
+public class ImperialweaponsModVariables {
 	public static class WorldVariables extends WorldSavedData {
-		public static final String DATA_NAME = "imperialcreatures_worldvars";
+		public static final String DATA_NAME = "imperialweapons_worldvars";
 		public WorldVariables() {
 			super(DATA_NAME);
 		}
@@ -37,9 +37,9 @@ public class ImperialcreaturesModVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				ImperialcreaturesMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
+				ImperialweaponsMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
 			} else {
-				ImperialcreaturesMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType),
+				ImperialweaponsMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType),
 						new WorldSavedDataSyncMessage(1, this));
 			}
 		}
@@ -54,7 +54,7 @@ public class ImperialcreaturesModVariables {
 	}
 
 	public static class MapVariables extends WorldSavedData {
-		public static final String DATA_NAME = "imperialcreatures_mapvars";
+		public static final String DATA_NAME = "imperialweapons_mapvars";
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -75,9 +75,9 @@ public class ImperialcreaturesModVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				ImperialcreaturesMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
+				ImperialweaponsMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
 			} else {
-				ImperialcreaturesMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
+				ImperialweaponsMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
 			}
 		}
 		static MapVariables clientSide = new MapVariables();
@@ -127,10 +127,10 @@ public class ImperialcreaturesModVariables {
 			if (side.isServer()) {
 				message.data.markDirty();
 				if (message.type == 0) {
-					ImperialcreaturesMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), message);
+					ImperialweaponsMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), message);
 					world.getServer().getWorld(DimensionType.OVERWORLD).getSavedData().set(message.data);
 				} else {
-					ImperialcreaturesMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), message);
+					ImperialweaponsMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), message);
 					((ServerWorld) world).getSavedData().set(message.data);
 				}
 			} else {

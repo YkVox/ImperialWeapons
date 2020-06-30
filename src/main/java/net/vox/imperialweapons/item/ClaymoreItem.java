@@ -1,8 +1,8 @@
 
-package net.vox.imperialcreatures.item;
+package net.vox.imperialweapons.item;
 
-import net.vox.imperialcreatures.itemgroup.ImperialWeaponryItemGroup;
-import net.vox.imperialcreatures.ImperialcreaturesModElements;
+import net.vox.imperialweapons.itemgroup.ImperialWeaponryItemGroup;
+import net.vox.imperialweapons.ImperialweaponsModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -11,11 +11,11 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-@ImperialcreaturesModElements.ModElement.Tag
-public class ClaymoreItem extends ImperialcreaturesModElements.ModElement {
-	@ObjectHolder("imperialcreatures:claymore")
+@ImperialweaponsModElements.ModElement.Tag
+public class ClaymoreItem extends ImperialweaponsModElements.ModElement {
+	@ObjectHolder("imperialweapons:claymore")
 	public static final Item block = null;
-	public ClaymoreItem(ImperialcreaturesModElements instance) {
+	public ClaymoreItem(ImperialweaponsModElements instance) {
 		super(instance, 3);
 	}
 

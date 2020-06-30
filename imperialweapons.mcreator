@@ -35,14 +35,16 @@
     "en_us": {
       "item.imperialcreatures.claymore": "Claymore",
       "item.imperialcreatures.lothric_knight_sword": "Lothric Knight Sword",
-      "itemGroup.tabimperial_weaponry": "Imperial Weaponry"
+      "itemGroup.tabimperial_weaponry": "Imperial Weaponry",
+      "item.imperialweapons.claymore": "Claymore",
+      "item.imperialweapons.lothric_knight_sword": "Lothric Knight Sword"
     }
   },
   "workspaceSettings": {
-    "modid": "imperialcreatures",
-    "modName": "Imperial Creatures",
-    "version": "1.0.0",
-    "author": "alex, MCreator",
+    "modid": "imperialweapons",
+    "modName": "Imperial Weapons",
+    "version": "0.0.1",
+    "author": "Vox",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -51,8 +53,8 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.vox.imperialcreatures",
+    "credits": "Created using mod maker MCreator",
+    "modElementsPackage": "net.vox.imperialweapons",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202000322116

@@ -1,8 +1,8 @@
 
-package net.vox.imperialcreatures.itemgroup;
+package net.vox.imperialweapons.itemgroup;
 
-import net.vox.imperialcreatures.item.LothricKnightSwordItem;
-import net.vox.imperialcreatures.ImperialcreaturesModElements;
+import net.vox.imperialweapons.item.LothricKnightSwordItem;
+import net.vox.imperialweapons.ImperialweaponsModElements;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -10,9 +10,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-@ImperialcreaturesModElements.ModElement.Tag
-public class ImperialWeaponryItemGroup extends ImperialcreaturesModElements.ModElement {
-	public ImperialWeaponryItemGroup(ImperialcreaturesModElements instance) {
+@ImperialweaponsModElements.ModElement.Tag
+public class ImperialWeaponryItemGroup extends ImperialweaponsModElements.ModElement {
+	public ImperialWeaponryItemGroup(ImperialweaponsModElements instance) {
 		super(instance, 2);
 	}
 
